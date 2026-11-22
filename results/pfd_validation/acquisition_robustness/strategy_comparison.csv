@@ -1,0 +1,12 @@
+strategy,detail,success,total,success_pct,worst_lock_cycles,notes
+1_fixed,Icp=50uA all frequencies,74,91,81.3,170,one current setting; no band logic
+1_fixed,Icp=75uA all frequencies,80,91,87.9,178,one current setting; no band logic
+1_fixed,Icp=100uA all frequencies,80,91,87.9,164,one current setting; no band logic
+1_fixed,Icp=125uA all frequencies,86,91,94.5,177,one current setting; no band logic
+1_fixed,Icp=150uA all frequencies,88,91,96.7,197,one current setting; no band logic
+1_fixed,Icp=200uA all frequencies,91,91,100.0,158,one current setting; no band logic
+1_fixed,Icp=250uA all frequencies,89,91,97.8,130,one current setting; no band logic
+1_fixed,Icp=300uA all frequencies,76,91,83.5,111,one current setting; no band logic
+2_band_dependent,"band0=200.0, band1=200.0, band2=300.0 uA",91,91,100.0,111,requires RANGE-based Icp selection
+3_fine_current_adjust,descending Icp on fine failure (see improvement_comparison.csv),81,81,100.0,,investigation-only ExploreController
+4_separate_acq_fine,"acq CP off (baseline already), fine Icp selectable",25,27,92.6,,coarse counting already CP-disabled in baseline

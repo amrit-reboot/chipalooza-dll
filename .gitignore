@@ -1,0 +1,55 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environments and credentials
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# Editor and OS metadata
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Simulator and build temporaries
+*.raw
+*.tr0
+*.tr1
+*.ac0
+*.tran
+build/
+dist/
+
+# Local-only submission task artifacts and generated snapshots
+/USER_INPUT_REQUIRED.md
+/README_submission.md
+/README_submission_v2.md
+/proposal/submission_email_v1.md
+/proposal/submission_readiness_v1.md
+/proposal/final_submission_audit_v1.md
+/proposal/final_submission_audit_v2.md
+/proposal/source_evidence_audit_v2.md
+/proposal/submission_manifest_v1.md
+/proposal/submission_manifest_v2.md
+/proposal/designer_cv_v1.md
+/proposal/equipment_list_v1.md
+/submission_package/
+/Chipalooza_Challenge4_Amrit_Tiwari_Submission.zip
+
+# Machine-specific environment helper scripts
+/scripts/env_audit.sh
+/scripts/iic.ps1
+/scripts/iic.sh

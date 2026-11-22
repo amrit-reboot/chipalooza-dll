@@ -1,0 +1,4 @@
+input_duty_pct,uncorrected_pct,corrected_ideal_pct,corrected_mean_pct,sigma_pct,status_45_55
+30,30.00,50.00,49.99,0.17,PASS
+50,50.00,50.00,49.99,0.16,PASS
+70,70.00,50.00,49.96,0.18,PASS

@@ -1,0 +1,12 @@
+{
+  "basin_step": 0.05,
+  "basin_range": [
+    0.5,
+    3.0
+  ],
+  "fine_sim_cycles": 150,
+  "fine_substeps": 150,
+  "controller": "Phase-3 AcquisitionController, unmodified",
+  "total_combinations": 56,
+  "elapsed_s": 746.3
+}

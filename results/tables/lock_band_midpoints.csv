@@ -1,0 +1,4 @@
+f_MHz,band,lock_cycle,static_err_ps,static_err_pct_T,u_final,delay_over_T,harmonic_index,status
+42.5,0,25,-1.682,-0.007,0.4427,0.9999,1,PASS
+85.0,1,46,-1.906,-0.016,0.4428,0.9998,1,PASS
+150.0,2,82,-1.958,-0.029,0.4402,0.9997,1,PASS

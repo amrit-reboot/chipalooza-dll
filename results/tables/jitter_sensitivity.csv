@@ -1,0 +1,6 @@
+assumed_supply_sensitivity_S,dT_rms_ps,period_jitter_rms_ps,status_60ps_max
+0.25,27.78,39.28,PASS
+0.50,55.56,78.56,FAIL
+1.00,111.11,157.12,FAIL
+1.20,133.33,188.55,FAIL
+2.00,222.22,314.25,FAIL

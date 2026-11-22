@@ -1,0 +1,7 @@
+icp_uA,worst_G_at_locked_points,max_lock_cycles,not_locked_count,gain_margin,lock_spec_400
+50,0.0990,556,0,OK,FAIL_SPEC
+75,0.1484,372,0,OK,PASS
+100,0.1979,280,0,OK,PASS
+150,0.2969,188,0,OK,PASS
+200,0.3959,142,0,OK,PASS
+300,0.5938,96,0,MARGINAL,PASS

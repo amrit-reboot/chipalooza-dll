@@ -1,0 +1,11 @@
+polarity,start_D_over_T,final_D_over_T,harmonic,rail,final_u
+UP_increases_delay,0.50,2.800,3,RAIL_MAX,0.0
+UP_increases_delay,0.80,2.800,3,RAIL_MAX,0.0
+UP_increases_delay,1.20,2.800,3,RAIL_MAX,0.0
+UP_increases_delay,1.50,2.800,3,RAIL_MAX,0.0
+UP_increases_delay,2.50,2.800,3,RAIL_MAX,0.0
+UP_decreases_delay,0.50,0.680,1,RAIL_MIN,1.0
+UP_decreases_delay,0.80,0.680,1,RAIL_MIN,1.0
+UP_decreases_delay,1.20,1.001,1,interior,0.5765756574040217
+UP_decreases_delay,1.50,1.001,1,interior,0.5765630226269551
+UP_decreases_delay,2.50,2.000,2,interior,0.12827345585563546

@@ -1,0 +1,25 @@
+start_D_over_T,Icp_uA,final_D_over_T,outcome,lock_cycle
+0.99,50,0.6800,RAIL_MIN (k=0 basin),none
+0.99,100,0.6800,RAIL_MIN (k=0 basin),none
+0.99,150,0.6800,RAIL_MIN (k=0 basin),none
+0.99,300,0.6800,RAIL_MIN (k=0 basin),none
+1.01,50,0.9989,1T_LOCK (from above),0
+1.01,100,0.6800,RAIL_MIN (k=0 basin),none
+1.01,150,0.6800,RAIL_MIN (k=0 basin),none
+1.01,300,0.6800,RAIL_MIN (k=0 basin),none
+1.05,50,1.0022,1T_LOCK (from above),49
+1.05,100,1.0010,1T_LOCK (from above),7
+1.05,150,1.0010,1T_LOCK (from above),1
+1.05,300,0.9990,1T_LOCK (above -> sub-1T excursion -> recover),6
+1.10,50,1.0036,1T_LOCK (from above),111
+1.10,100,1.0011,1T_LOCK (from above),49
+1.10,150,1.0010,1T_LOCK (from above),28
+1.10,300,1.0010,1T_LOCK (from above),1
+1.30,50,1.0074,1T_LOCK (from above),182
+1.30,100,1.0012,1T_LOCK (from above),89
+1.30,150,1.0010,1T_LOCK (from above),58
+1.30,300,1.0010,1T_LOCK (from above),27
+1.95,50,1.0118,1T_LOCK (from above),224
+1.95,100,1.0014,1T_LOCK (from above),111
+1.95,150,1.0010,1T_LOCK (from above),74
+1.95,300,1.0010,1T_LOCK (from above),36

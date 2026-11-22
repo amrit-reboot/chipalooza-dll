@@ -1,0 +1,5 @@
+harmonic_k,side,start_D_over_T,measured_e_ratio,final_D_over_T,verdict
+1,below,0.980,1.166,0.680,NOT_ATTRACTING
+1,above,1.020,0.930,0.999,ATTRACTING
+2,below,1.980,1.489,1.001,NOT_ATTRACTING
+2,above,2.020,0.870,2.000,ATTRACTING

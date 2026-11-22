@@ -1,0 +1,77 @@
+====================================================================================================
+AUDIT OF THE v1 CLAIM: 'a DLL cannot lock with a PFD'
+100 MHz, band 1, Icp=300 uA, C_loop=25 pF
+====================================================================================================
+
+[A1/A3] Per-period charge vs theory Q = Icp * frac(D/T) * T
+     D/T  Q_meas/IcpT  Q_theory/IcpT  sign
+    0.05      0.05000        0.05000   POS
+    0.30      0.30000        0.30000   POS
+    0.55      0.55000        0.55000   POS
+    0.80      0.80000        0.80000   POS
+    1.05      0.05000        0.05000   POS
+    1.30      0.30000        0.30000   POS
+    1.55      0.55000        0.55000   POS
+    1.80      0.80000        0.80000   POS
+    2.05      0.05000        0.05000   POS
+    2.30      0.30000        0.30000   POS
+    2.55      0.55000        0.55000   POS
+    2.80      0.80000        0.80000   POS
+   max |error| over 60 points: 0.00e+00 IcpT
+   signs present: ['POS', 'ZERO']
+
+[A2] Scheduler: continuous periodic edge trains?
+   reference edges exactly T apart      : True
+   feedback edges exactly T apart       : True
+   feedback offset equals line delay    : True
+   comparisons in 12 periods: UP=11 DOWN=10 RESET=10
+   per-period charge                   : 0.3500 IcpT
+   first events (t/T, type):
+        0.000  UP
+        1.350  DOWN
+        1.351  RESET
+        2.000  UP
+        2.350  DOWN
+        2.351  RESET
+        3.000  UP
+        3.350  DOWN
+        3.351  RESET
+        4.000  UP
+        4.350  DOWN
+        4.351  RESET
+
+[A4] Control polarity decides whether the loop moves toward or away from T
+       UP_increases_delay  D0=0.50T -> final 2.800T  RAIL_MAX
+       UP_increases_delay  D0=0.80T -> final 2.800T  RAIL_MAX
+       UP_increases_delay  D0=1.20T -> final 2.800T  RAIL_MAX
+       UP_increases_delay  D0=1.50T -> final 2.800T  RAIL_MAX
+       UP_increases_delay  D0=2.50T -> final 2.800T  RAIL_MAX
+       UP_decreases_delay  D0=0.50T -> final 0.680T  RAIL_MIN
+       UP_decreases_delay  D0=0.80T -> final 0.680T  RAIL_MIN
+       UP_decreases_delay  D0=1.20T -> final 1.001T  interior
+       UP_decreases_delay  D0=1.50T -> final 1.001T  interior
+       UP_decreases_delay  D0=2.50T -> final 2.000T  interior
+
+[A5] Basin map with the physically correct polarity (UP lowers delay)
+   starting points that end at 1T: 20/69
+   start in (0T, 1T]: final delay 0.68T..1.00T  median 0.68T
+   start in (1T, 2T]: final delay 1.00T..2.00T  median 1.00T
+   start in (2T, 3T]: final delay 2.00T..2.00T  median 2.00T
+   start in (3T, 4T]: final delay 2.00T..2.00T  median 2.00T
+
+[A6] Per-cycle loop gain g = Icp*Kd/(C*VDD) at the 1T lock point
+   Icp=  50 uA  C=  5 pF  g= 0.062  STABLE
+   Icp=  50 uA  C= 25 pF  g= 0.012  STABLE
+   Icp=  50 uA  C= 50 pF  g= 0.006  STABLE
+   Icp= 100 uA  C=  5 pF  g= 0.124  STABLE
+   Icp= 100 uA  C= 25 pF  g= 0.025  STABLE
+   Icp= 100 uA  C= 50 pF  g= 0.012  STABLE
+   Icp= 300 uA  C=  5 pF  g= 0.371  STABLE
+   Icp= 300 uA  C= 25 pF  g= 0.074  STABLE
+   Icp= 300 uA  C= 50 pF  g= 0.037  STABLE
+   Icp= 600 uA  C=  5 pF  g= 0.742  STABLE
+   Icp= 600 uA  C= 25 pF  g= 0.148  STABLE
+   Icp= 600 uA  C= 50 pF  g= 0.074  STABLE
+   Icp=1200 uA  C=  5 pF  g= 1.485  STABLE
+   Icp=1200 uA  C= 25 pF  g= 0.297  STABLE
+   Icp=1200 uA  C= 50 pF  g= 0.148  STABLE

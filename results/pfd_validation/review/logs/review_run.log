@@ -1,0 +1,32 @@
+====================================================================================================
+INDEPENDENT REVIEW OF THE v1 PFD CONCLUSION  (LEVEL B)
+====================================================================================================
+
+[R1] 77-point grid: v1 (wrong CP sign) vs corrected CP sign
+     wrong: {'RAIL_MAX': 77}
+   correct: {'LOCK_1T': 24, 'NO_1T_LOCK': 53}
+
+[R2] Basin maps, event vs dynamic propagation
+   start 0.60-0.99T    event: {0: 8}
+   start 0.60-0.99T  dynamic: {0: 8}
+   start 1.00-1.99T    event: {1: 20}
+   start 1.00-1.99T  dynamic: {0: 1, 1: 19}
+   start 2.00-3.00T    event: {2: 21}
+   start 2.00-3.00T  dynamic: {1: 7, 2: 14}
+
+[R3/R4] Timing diagrams and charge transfer
+   wrote r3_timing_diagrams.png and r4_charge_transfer.png
+
+[R5] Acquisition across 11 frequencies
+               min_delay: 0/11 lock 1T; others: ['NO_LOCK', 'NO_LOCK', 'NO_LOCK', 'NO_LOCK', 'NO_LOCK', 'NO_LOCK', 'NO_LOCK', 'NO_LOCK', 'NO_LOCK', 'NO_LOCK', 'NO_LOCK']
+               max_delay: 2/11 lock 1T; others: ['HARMONIC', 'HARMONIC', 'HARMONIC', 'HARMONIC', 'HARMONIC', 'HARMONIC', 'HARMONIC', 'HARMONIC', 'HARMONIC']
+              preset_1.2: 11/11 lock 1T; others: []
+              preset_1.5: 11/11 lock 1T; others: []
+              preset_1.8: 11/11 lock 1T; others: []
+      dynamic_preset_1.5: 10/11 lock 1T; others: ['NO_LOCK']
+
+[R6] Local stability around kT
+   1  below  0.980  1.166  0.680  NOT_ATTRACTING
+   1  above  1.020  0.930  0.999  ATTRACTING
+   2  below  1.980  1.489  1.001  NOT_ATTRACTING
+   2  above  2.020  0.870  2.000  ATTRACTING

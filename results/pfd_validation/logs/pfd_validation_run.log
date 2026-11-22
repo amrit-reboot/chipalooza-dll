@@ -1,0 +1,91 @@
+================================================================================================
+PFD CREDIBILITY VALIDATION - LEVEL B behavioral, event-driven PFD
+Icp=300 uA, C_loop=25 pF, cycles=4000
+================================================================================================
+
+[E1] Detector pulse widths vs fixed delay (control frozen)
+   D/T=0.050  steady UP= 0.0505  DOWN= 0.0005  frac(D/T)= 0.0500  MATCH
+   D/T=0.200  steady UP= 0.2005  DOWN= 0.0005  frac(D/T)= 0.2000  MATCH
+   D/T=0.500  steady UP= 0.5005  DOWN= 0.0005  frac(D/T)= 0.5000  MATCH
+   D/T=0.900  steady UP= 0.9005  DOWN= 0.0005  frac(D/T)= 0.9000  MATCH
+   D/T=0.990  steady UP= 0.9905  DOWN= 0.0005  frac(D/T)= 0.9900  MATCH
+   D/T=1.000  steady UP= 0.0005  DOWN= 0.0005  frac(D/T)= 0.0000  MATCH
+   D/T=1.010  steady UP= 0.0105  DOWN= 0.0005  frac(D/T)= 0.0100  MATCH
+   D/T=1.100  steady UP= 0.1005  DOWN= 0.0005  frac(D/T)= 0.1000  MATCH
+   D/T=1.500  steady UP= 0.5005  DOWN= 0.0005  frac(D/T)= 0.5000  MATCH
+   D/T=2.000  steady UP= 0.0005  DOWN= 0.0005  frac(D/T)= 0.0000  MATCH
+   D/T=3.000  steady UP= 0.0005  DOWN= 0.0005  frac(D/T)= 0.0000  MATCH
+
+[E2] Acquisition matrix (UP increases delay, min-delay startup)
+   outcomes: {'HARMONIC_1T': 7, 'HARMONIC_2T': 28, 'HARMONIC_3T': 42}
+   opposite polarity (UP decreases delay): {'LOCK_1T': 24, 'HARMONIC_2T': 14, 'HARMONIC_3T': 1, 'NO_LOCK': 10, 'HARMONIC_1T': 28}
+
+[E3] Acquisition basin map at 100 MHz
+   starting points that end at 1T: 0/71
+
+[E4] Old oracle model vs new event-driven model
+   identical verdicts: 0/77
+   DIFF f=   25 MHz u0=0.00: old 1T/YES vs new 1T/no
+   DIFF f=   25 MHz u0=0.10: old 1T/YES vs new 1T/no
+   DIFF f=   25 MHz u0=0.25: old 1T/YES vs new 1T/no
+   DIFF f=   25 MHz u0=0.50: old 1T/YES vs new 1T/no
+   DIFF f=   25 MHz u0=0.75: old 1T/YES vs new 1T/no
+   DIFF f=   25 MHz u0=0.90: old 1T/YES vs new 1T/no
+   DIFF f=   25 MHz u0=1.00: old 1T/YES vs new 1T/no
+   DIFF f=   30 MHz u0=0.00: old 1T/YES vs new 2T/no
+   DIFF f=   30 MHz u0=0.10: old 1T/YES vs new 2T/no
+   DIFF f=   30 MHz u0=0.25: old 1T/YES vs new 2T/no
+   DIFF f=   30 MHz u0=0.50: old 1T/YES vs new 2T/no
+   DIFF f=   30 MHz u0=0.75: old 1T/YES vs new 2T/no
+   ... 65 more differing rows in old_vs_new_model.csv
+
+[E5] Startup strategy comparison
+      25 MHz min_delay: D_start=0.340T..1.400T -> final 1.400T  HARMONIC
+      25 MHz max_delay: D_start=0.340T..1.400T -> final 1.400T  HARMONIC
+      25 MHz       mid: D_start=0.340T..1.400T -> final 1.400T  HARMONIC
+      30 MHz min_delay: D_start=0.408T..1.680T -> final 1.680T  HARMONIC
+      30 MHz max_delay: D_start=0.408T..1.680T -> final 1.680T  HARMONIC
+      30 MHz       mid: D_start=0.408T..1.680T -> final 1.680T  HARMONIC
+    42.5 MHz min_delay: D_start=0.578T..2.380T -> final 2.380T  HARMONIC
+    42.5 MHz max_delay: D_start=0.578T..2.380T -> final 2.380T  HARMONIC
+    42.5 MHz       mid: D_start=0.578T..2.380T -> final 2.380T  HARMONIC
+      50 MHz min_delay: D_start=0.680T..2.800T -> final 2.800T  HARMONIC
+      50 MHz max_delay: D_start=0.680T..2.800T -> final 2.800T  HARMONIC
+      50 MHz       mid: D_start=0.680T..2.800T -> final 2.800T  HARMONIC
+      60 MHz min_delay: D_start=0.816T..3.360T -> final 3.360T  HARMONIC
+      60 MHz max_delay: D_start=0.816T..3.360T -> final 3.360T  HARMONIC
+      60 MHz       mid: D_start=0.816T..3.360T -> final 3.360T  HARMONIC
+      85 MHz min_delay: D_start=0.578T..2.380T -> final 2.380T  HARMONIC
+      85 MHz max_delay: D_start=0.578T..2.380T -> final 2.380T  HARMONIC
+      85 MHz       mid: D_start=0.578T..2.380T -> final 2.380T  HARMONIC
+     100 MHz min_delay: D_start=0.680T..2.800T -> final 2.800T  HARMONIC
+     100 MHz max_delay: D_start=0.680T..2.800T -> final 2.800T  HARMONIC
+     100 MHz       mid: D_start=0.680T..2.800T -> final 2.800T  HARMONIC
+     120 MHz min_delay: D_start=0.816T..3.360T -> final 3.360T  HARMONIC
+     120 MHz max_delay: D_start=0.816T..3.360T -> final 3.360T  HARMONIC
+     120 MHz       mid: D_start=0.816T..3.360T -> final 3.360T  HARMONIC
+     150 MHz min_delay: D_start=0.600T..2.100T -> final 2.100T  HARMONIC
+     150 MHz max_delay: D_start=0.600T..2.100T -> final 2.100T  HARMONIC
+     150 MHz       mid: D_start=0.600T..2.100T -> final 2.100T  HARMONIC
+     180 MHz min_delay: D_start=0.720T..2.520T -> final 2.520T  HARMONIC
+     180 MHz max_delay: D_start=0.720T..2.520T -> final 2.520T  HARMONIC
+     180 MHz       mid: D_start=0.720T..2.520T -> final 2.520T  HARMONIC
+     200 MHz min_delay: D_start=0.800T..2.800T -> final 2.800T  HARMONIC
+     200 MHz max_delay: D_start=0.800T..2.800T -> final 2.800T  HARMONIC
+     200 MHz       mid: D_start=0.800T..2.800T -> final 2.800T  HARMONIC
+
+[E6] Capture window of a wrapped phase detector
+      25 MHz band 0: D_min=0.340T D_max=1.400T contains1T=YES capturable= no  FAIL
+      30 MHz band 0: D_min=0.408T D_max=1.680T contains1T=YES capturable= no  FAIL
+    42.5 MHz band 0: D_min=0.578T D_max=2.380T contains1T=YES capturable=YES  OK
+      50 MHz band 0: D_min=0.680T D_max=2.800T contains1T=YES capturable=YES  OK
+      60 MHz band 0: D_min=0.816T D_max=3.360T contains1T=YES capturable=YES  OK
+      85 MHz band 1: D_min=0.578T D_max=2.380T contains1T=YES capturable=YES  OK
+     100 MHz band 1: D_min=0.680T D_max=2.800T contains1T=YES capturable=YES  OK
+     120 MHz band 1: D_min=0.816T D_max=3.360T contains1T=YES capturable=YES  OK
+     150 MHz band 2: D_min=0.600T D_max=2.100T contains1T=YES capturable=YES  OK
+     180 MHz band 2: D_min=0.720T D_max=2.520T contains1T=YES capturable=YES  OK
+     200 MHz band 2: D_min=0.800T D_max=2.800T contains1T=YES capturable=YES  OK
+
+[E7] Wrapping phase detector (alternative) on the same grid
+   outcomes: {'LOCK_1T': 47, 'NO_LOCK': 5, 'HARMONIC_2T': 17, 'HARMONIC_3T': 8}

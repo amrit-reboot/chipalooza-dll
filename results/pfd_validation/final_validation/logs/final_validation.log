@@ -1,0 +1,55 @@
+====================================================================================================
+FINAL VALIDATION — PROBLEM 1 (LEVEL B, exact-event engine)
+====================================================================================================
+
+[F1] Timestep / event audit
+   sub=   50 dt= 200.0ps launched=300 completed=299 inflight=1 balance=0 ign_ref=1 ign_fb=0 final=1.001
+   sub=  100 dt= 100.0ps launched=300 completed=299 inflight=1 balance=0 ign_ref=1 ign_fb=0 final=1.001
+   sub=  200 dt=  50.0ps launched=300 completed=299 inflight=1 balance=0 ign_ref=1 ign_fb=0 final=1.001
+   sub=  500 dt=  20.0ps launched=300 completed=299 inflight=1 balance=0 ign_ref=1 ign_fb=0 final=1.001
+   sub= 1000 dt=  10.0ps launched=300 completed=299 inflight=1 balance=0 ign_ref=1 ign_fb=0 final=1.001
+   sub= 2000 dt=   5.0ps launched=300 completed=299 inflight=1 balance=0 ign_ref=1 ign_fb=0 final=1.001
+   sub= 5000 dt=   2.0ps launched=300 completed=299 inflight=1 balance=0 ign_ref=1 ign_fb=0 final=1.001
+
+[F2] Convergence study (14 starts x 7 substeps)
+   start=0.90T: outcomes={'RAIL_MIN (k=0 basin)': 7} finals=['0.680']
+   start=0.95T: outcomes={'RAIL_MIN (k=0 basin)': 7} finals=['0.680']
+   start=0.98T: outcomes={'RAIL_MIN (k=0 basin)': 7} finals=['0.680']
+   start=0.99T: outcomes={'RAIL_MIN (k=0 basin)': 7} finals=['0.680']
+   start=1.00T: outcomes={'RAIL_MIN (k=0 basin)': 7} finals=['0.680']
+   start=1.01T: outcomes={'RAIL_MIN (k=0 basin)': 7} finals=['0.680']
+   start=1.02T: outcomes={'RAIL_MIN (k=0 basin)': 7} finals=['0.680']
+   start=1.05T: outcomes={'1T_LOCK (above -> sub-1T excursion -> recover)': 7} finals=['0.999']
+   start=1.10T: outcomes={'1T_LOCK (from above)': 7} finals=['1.001']
+   start=1.20T: outcomes={'1T_LOCK (from above)': 7} finals=['1.001']
+   start=1.30T: outcomes={'1T_LOCK (from above)': 7} finals=['1.001']
+   start=1.50T: outcomes={'1T_LOCK (from above)': 6, '1T_LOCK (above -> sub-1T excursion -> recover)': 1} finals=['0.999', '1.001']
+   start=1.80T: outcomes={'1T_LOCK (from above)': 7} finals=['1.001']
+   start=1.95T: outcomes={'1T_LOCK (from above)': 6, '1T_LOCK (above -> sub-1T excursion -> recover)': 1} finals=['0.999', '1.001']
+
+[F3] Parameter sweeps
+   Icp sweep outcomes:
+     0.99T: [('50', 'RAIL_MIN (k=0 basin)'), ('100', 'RAIL_MIN (k=0 basin)'), ('150', 'RAIL_MIN (k=0 basin)'), ('300', 'RAIL_MIN (k=0 basin)')]
+     1.01T: [('50', '1T_LOCK (from above)'), ('100', 'RAIL_MIN (k=0 basin)'), ('150', 'RAIL_MIN (k=0 basin)'), ('300', 'RAIL_MIN (k=0 basin)')]
+     1.05T: [('50', '1T_LOCK (from above)'), ('100', '1T_LOCK (from above)'), ('150', '1T_LOCK (from above)'), ('300', '1T_LOCK (above -> sub-1T excursion -> recover)')]
+     1.10T: [('50', '1T_LOCK (from above)'), ('100', '1T_LOCK (from above)'), ('150', '1T_LOCK (from above)'), ('300', '1T_LOCK (from above)')]
+     1.30T: [('50', '1T_LOCK (from above)'), ('100', '1T_LOCK (from above)'), ('150', '1T_LOCK (from above)'), ('300', '1T_LOCK (from above)')]
+     1.95T: [('50', '1T_LOCK (from above)'), ('100', '1T_LOCK (from above)'), ('150', '1T_LOCK (from above)'), ('300', '1T_LOCK (from above)')]
+   Reset sweep outcomes:
+     0.99T: [(0, 'RAIL_MIN (k=0 basin)'), (5, 'RAIL_MIN (k=0 basin)'), (10, 'RAIL_MIN (k=0 basin)'), (25, 'RAIL_MIN (k=0 basin)')]
+     1.01T: [(0, 'RAIL_MIN (k=0 basin)'), (5, 'RAIL_MIN (k=0 basin)'), (10, 'RAIL_MIN (k=0 basin)'), (25, 'RAIL_MIN (k=0 basin)')]
+     1.05T: [(0, 'RAIL_MIN (k=0 basin)'), (5, '1T_LOCK (above -> sub-1T excursion -> recover)'), (10, '1T_LOCK (above -> sub-1T excursion -> recover)'), (25, '1T_LOCK (above -> sub-1T excursion -> recover)')]
+     1.10T: [(0, '1T_LOCK (from above)'), (5, '1T_LOCK (from above)'), (10, '1T_LOCK (from above)'), (25, '1T_LOCK (from above)')]
+     1.30T: [(0, '1T_LOCK (from above)'), (5, '1T_LOCK (from above)'), (10, '1T_LOCK (from above)'), (25, '1T_LOCK (from above)')]
+   Dead sweep outcomes:
+     0.99T: [(0, 'RAIL_MIN (k=0 basin)'), (5, 'RAIL_MIN (k=0 basin)'), (10, 'RAIL_MIN (k=0 basin)'), (25, 'RAIL_MIN (k=0 basin)')]
+     1.01T: [(0, 'RAIL_MIN (k=0 basin)'), (5, 'RAIL_MIN (k=0 basin)'), (10, 'RAIL_MIN (k=0 basin)'), (25, 'RAIL_MIN (k=0 basin)')]
+     1.05T: [(0, '1T_LOCK (above -> sub-1T excursion -> recover)'), (5, '1T_LOCK (above -> sub-1T excursion -> recover)'), (10, '1T_LOCK (above -> sub-1T excursion -> recover)'), (25, '1T_LOCK (above -> sub-1T excursion -> recover)')]
+     1.10T: [(0, '1T_LOCK (from above)'), (5, '1T_LOCK (from above)'), (10, '1T_LOCK (from above)'), (25, '1T_LOCK (from above)')]
+     1.30T: [(0, '1T_LOCK (from above)'), (5, '1T_LOCK (from above)'), (10, '1T_LOCK (from above)'), (25, '1T_LOCK (from above)')]
+
+[F4] Edge propagation verification
+   {'launched': 5, 'completed': 4, 'in_flight': 1, 'ignored_ref': 1, 'ignored_fb': 0, 'resets': 4, 'trace_events': 12}
+   reset delays (ps): min=5.000 max=5.000 mean=5.000
+
+[F5] Plots written

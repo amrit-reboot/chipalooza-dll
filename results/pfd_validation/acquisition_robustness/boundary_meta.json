@@ -1,0 +1,7 @@
+{
+  "grid": "0.980..1.120 step 0.002; 1.90..2.10 step 0.01",
+  "fine_sim_cycles": 150,
+  "fine_substeps": 150,
+  "controller": "Phase-3 AcquisitionController, unmodified",
+  "elapsed_s": 216.2
+}
