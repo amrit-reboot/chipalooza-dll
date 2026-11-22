@@ -153,4 +153,19 @@ Running the scripts may overwrite files under `results/`. Reproduction should be
 
 ## 11. Publication verification
 
-Repository creation, commit, push, and post-push verification are recorded at the end of this workflow. The final response states only operations that completed successfully.
+Publication completed on 2026-11-22. The initial content commit is `4d87a6f048298e1248f677f02a4ebf4f768a39d7`. These verification results were recorded in a separate documentation commit after the initial push.
+
+| Check | Result |
+|---|---|
+| Repository | `https://github.com/amrit-reboot/chipalooza-dll` |
+| Visibility | public |
+| Default branch | `main` |
+| Local HEAD after initial push | `4d87a6f048298e1248f677f02a4ebf4f768a39d7` |
+| Remote `main` after initial push | same commit |
+| Remote blob count | 147 |
+| Excluded-file matches on remote | 0 |
+| README, LICENSE, NOTICE, audit, and manifest on remote | present |
+| Push mode | normal push, no force |
+| Public page check | repository page returned the expected title, description, public label, and rendered README |
+
+No operation in this workflow overwrote a remote branch or repository.

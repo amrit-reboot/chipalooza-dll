@@ -1,6 +1,6 @@
 # Publication File Manifest
 
-Generated: 2026-11-22T13:16:00.557397+00:00
+Generated: 2026-11-22T13:17:19.105107+00:00
 
 This manifest lists the exact file set prepared for the public `amrit-reboot/chipalooza-dll` repository. Excluded local files are not listed. No excluded file was deleted.
 
@@ -25,8 +25,8 @@ SHA-256 values are computed over file bytes at manifest generation time. The two
 | `.gitignore` | 968 | `b0b18ec696c2973190b278ab6afb0c9349ae1155cb3d171c2ac274da58f0d464` |
 | `AGENTS.md` | 23790 | `af76941842bbb89b2b909f14afab72705db70a0db219e8fa7a3b409ff20b8e80` |
 | `CONTRIBUTING.md` | 1684 | `ca8df98528c8c3155719eb0128840b54bbda05037b5f39552d3ece253df5ca63` |
-| `docs/github_public_release_audit.md` | 8596 | `omitted, self-referential publication doc` |
-| `docs/publication_file_manifest.md` | 20521 | `omitted, self-referential publication doc` |
+| `docs/github_public_release_audit.md` | 9273 | `omitted, self-referential publication doc` |
+| `docs/publication_file_manifest.md` | 20355 | `omitted, self-referential publication doc` |
 | `LICENSE` | 11357 | `c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4` |
 | `NOTICE` | 1887 | `f700d4a0721653995dcd4ebc50f2a5cad853e81b31353dc893d7f76d2630cd49` |
 | `proposal/architecture_decisions_v0.1.md` | 11187 | `013b0ef91141978c57327a0b10ce1d768a3e0074360c8238c812be0bc67999d1` |
