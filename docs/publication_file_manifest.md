@@ -30,11 +30,6 @@ SHA-256 values are computed over file bytes at manifest generation time. The two
 | `LICENSE` | 11357 | `c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4` |
 | `NOTICE` | 1887 | `f700d4a0721653995dcd4ebc50f2a5cad853e81b31353dc893d7f76d2630cd49` |
 | `proposal/architecture_decisions_v0.1.md` | 11187 | `013b0ef91141978c57327a0b10ce1d768a3e0074360c8238c812be0bc67999d1` |
-| `proposal/proposal_audit_v0.1.md` | 15476 | `a4d4f5eca086b87e2bbb707402d02746af4ae7320866b85c0417069f34347d7f` |
-| `proposal/proposal_v0.1.md` | 29158 | `ce8de2330153c2ca6baf115b3e99c75bddb8f679092b8d242b642a2957bada83` |
-| `proposal/proposal_v0.2.md` | 34387 | `6f127e5c3682b0d4e69c624f16c83e959c223d3ecf5952201fa00921fc2455fb` |
-| `proposal/proposal_v0.3.md` | 41025 | `6a11c4dd7e52b6bd2eda354eb613bd651d23052bd22fba41035c7a3741de70f7` |
-| `proposal/proposal_v0.4.md` | 42749 | `17719823db7ef0ecb3306b7a6d23603452c802c399908739c002e7dbe95ef9ec` |
 | `proposal/proposal_v1_submission.md` | 45505 | `fc63ccf6036b6761d00d99b38650db72cc339721a4dab968c9437feef9d8eddd` |
 | `proposal/spec_compliance_matrix_v1.md` | 13197 | `cad7ab1c21f76b171d0165b9a0e55bb228637c215bb82a2f317677a685e77c6e` |
 | `README.md` | 11326 | `9241ad36903e41e3c1f616c6cce9eb17d9e96a8a0a14033fb160f812dd621158` |
